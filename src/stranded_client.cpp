@@ -1,71 +1,52 @@
-# include <firefly/ffly_engine.hpp>
-# include <firefly/graphics/fill_pixmap.hpp>
-# include <firefly/types/colour_t.hpp>
-# include <cstdio>
-# include <firefly/keycodes.h>
-# include <boost/cstdint.hpp>
-# include <firefly/obj_manager.hpp>
-# include <firefly/system/event.hpp>
-static mdl::firefly::obj_manager *obj_manager;
-static int unsigned xpos = 33, ypos = 33;
-void game_loop(boost::int8_t __info, mdl::ffly_client::portal_t *__portal) {
-	mdl::firefly::system::event event;
-
-	while(__portal-> poll_event(event)) {
-		switch(event.event_type) {
-			case mdl::firefly::system::event::KEY_PRESSED:
-				if (event.key_code == X11_LT_D) {
-					xpos ++;
-					obj_manager-> set_xaxis(0, xpos);
-				}
-				if (event.key_code == X11_LT_A) {
-					xpos --;
-					obj_manager-> set_xaxis(0, xpos);
-				}
-				if (event.key_code == X11_LT_W) {
-					ypos --;
-					obj_manager-> set_yaxis(0, ypos);
-				}
-				if (event.key_code == X11_LT_S) {
-					ypos ++;
-					obj_manager-> set_yaxis(0, ypos);
-				}
-			break;
-		}
-	}
-
-//	usleep(1000);
-
-	printf("%d FPS\n", __portal-> fps_count());
-
-	mdl::firefly::graphics::colour_t colour = {38, 60, 94, 255};
-	mdl::firefly::graphics::fill_pixmap(__portal-> _this-> layer.get_layer_pixmap(0), 640, 640, colour);
-
-	obj_manager-> manage();
-}
-
-int main() {
-	mdl::ffly_client *client = new mdl::ffly_client(640, 640);
+# include "stranded_client.hpp"
+boost::int8_t mdl::stranded_client::init() {
 	mdl::firefly::types::init_opt_t init_options = {
 		.cam_xlen = 256,
 		.cam_ylen = 256
 	};
 
-	client-> layer.add_layer(640, 640, 0, 0);
-	mdl::firefly::graphics::colour_t colour = {38, 60, 94, 255};
-	mdl::firefly::graphics::fill_pixmap(client-> layer.get_layer_pixmap(0), 640, 640, colour);
+	this-> _ffly_client.layer.add_layer(640, 640, 0, 0);
 
-	mdl::firefly::obj_manager obj_mana(client-> layer.get_layer_pixmap(0), 640, 640, 1);
-	obj_manager = &obj_mana;
-	obj_mana.add(64, 64, 1, 33, 33, 0);
-	obj_mana.enable_bound(0);
-	obj_mana.set_xaxis_bound(0, 1, 640);
-	obj_mana.set_yaxis_bound(0, 1, 640);
-	obj_mana.enable_gravity(0);
+	this-> _ffly_client.init(init_options);
+}
 
-	client-> init(init_options);
-	client-> begin("Stranded Alpha", game_loop);
-	delete client;
+boost::int8_t mdl::stranded_client::begin() {
+	this-> _ffly_client.begin("Stranded Alpha", &stranded_client::engine_loop, this);
+}
 
-	return 0;
+void mdl::stranded_client::engine_loop(boost::int8_t __info, mdl::ffly_client::portal_t *__portal, void *__this) {
+	stranded_client *_this = (stranded_client *)__this;
+
+	firefly::system::event event;
+
+	while(__portal-> poll_event(event)) {
+		switch(event.event_type) {
+			case mdl::firefly::system::event::KEY_PRESSED:
+				if (event.key_code == mdl::firefly::system::event::WD_KEY_D) {
+					printf("key 'WD_KEY_D' was pressed.\n");
+
+				} else if (event.key_code == mdl::firefly::system::event::WD_KEY_A) {
+					printf("key 'WD_KEY_A' was pressed.\n");
+
+				} else if (event.key_code == mdl::firefly::system::event::WD_KEY_W) {
+					printf("key 'WD_KEY_W' was pressed.\n");
+
+				} else if (event.key_code == mdl::firefly::system::event::WD_KEY_S) {
+					printf("key 'WD_KEY_S' was pressed.\n");
+
+				}
+			break;
+		}
+	}
+
+	printf("%d FPS\n", __portal-> fps_count());
+	usleep(10000);
+
+	firefly::graphics::fill_pixmap(__portal-> _this-> layer.get_layer_pixmap(0), _this-> wd_xaxis_len, _this-> wd_yaxis_len, _this-> bg_colour);
+}
+
+int main() {
+	mdl::stranded_client stranded_client(640, 640);
+	stranded_client.init();
+	stranded_client.begin();
 }

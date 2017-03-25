@@ -1,0 +1,111 @@
+# include <firefly/ffly_engine.hpp>
+# include <firefly/graphics/fill_pixmap.hpp>
+# include <firefly/types/colour_t.hpp>
+# include <cstdio>
+# include <firefly/keycodes.h>
+# include <boost/cstdint.hpp>
+# include <firefly/obj_manager.hpp>
+# include <firefly/system/event.hpp>
+# include <firefly/ffly_config.hpp>
+# define XLEN 640
+# define YLEN 640
+
+boost::int8_t mdl::stranded_client::init() {
+
+
+}
+
+mdl::firefly::graphics::colour_t bg_colour = {40, 43, 48, 255};
+void game_loop(boost::int8_t __info, mdl::ffly_client::portal_t *__portal) {
+	mdl::firefly::system::event event;
+
+	while(__portal-> poll_event(event)) {
+		switch(event.event_type) {
+			case mdl::firefly::system::event::KEY_PRESSED:
+				if (event.key_code == mdl::firefly::system::event::WD_KEY_D) {
+					printf("key 'WD_KEY_D' was pressed.\n");
+				} else if (event.key_code == mdl::firefly::system::event::WD_KEY_A) {
+					printf("key 'WD_KEY_A' was pressed.\n");
+				} else if (event.key_code == mdl::firefly::system::event::WD_KEY_W) {
+					printf("key 'WD_KEY_W' was pressed.\n");
+				} else if (event.key_code == mdl::firefly::system::event::WD_KEY_S) {
+					printf("key 'WD_KEY_S' was pressed.\n");
+				}
+			break;
+		}
+	}
+
+	//printf("%d FPS\n", __portal-> fps_count());
+
+	mdl::firefly::graphics::fill_pixmap(__portal-> _this-> layer.get_layer_pixmap(0), XLEN, YLEN, bg_colour);
+	__portal-> _this-> manage_objs();
+}
+# include <firefly/types/coords_t.hpp>
+# include <firefly/types/shape_info_t.hpp>
+# include <firefly/memory/make_dynamic.hpp>
+# include <firefly/graphics/png_loader.hpp>
+int main() {
+	mdl::ffly_client *client = new mdl::ffly_client(XLEN, YLEN);
+	mdl::firefly::types::init_opt_t init_options = {
+		.cam_xlen = 256,
+		.cam_ylen = 256
+	};
+
+	client-> layer.add_layer(XLEN, YLEN, 0, 0);
+	mdl::firefly::graphics::fill_pixmap(client-> layer.get_layer_pixmap(0), XLEN, YLEN, bg_colour);
+
+	mdl::firefly::obj_manager obj_mana(client-> layer.get_layer_pixmap(0), XLEN, YLEN, 1);
+	client-> obj_manager = &obj_mana;
+
+	mdl::firefly::types::coords_t<> obj_0 = {44, 3};
+	mdl::firefly::types::coords_t<> obj_1 = {240, 240};
+
+	mdl::firefly::types::shape_info_t shape_info;
+
+	mdl::firefly::types::coords_t<> vertice_coords[][2] = {
+			{{0, 0}, {1, 1}},
+			{{14, 0}, {15, 1}},
+			{{0, 14}, {1, 15}},
+			{{14, 14}, {15, 15}}
+	};
+
+	mdl::firefly::types::coords_t<> face_coords[][2] = {
+			{{2, 0}, {13, 1}},
+			{{14, 2}, {15, 13}},
+			{{2, 14}, {13, 15}},
+			{{0, 2}, {1, 13}}
+	};
+
+	shape_info.vertice_coords = vertice_coords;
+	shape_info.face_coords = face_coords;
+
+	obj_mana.add(obj_0, shape_info, 16, 16, 1);
+	mdl::uint_t img_size[2] = {0};
+	boost::uint8_t *pm;
+	mdl::firefly::graphics::load_png_file("../assets/", "block", pm, img_size);
+
+	for (std::size_t o = 0; o != (16 * 16) * 4; o ++)
+		obj_mana.get_pixmap(0)[o] = pm[o];
+
+	obj_mana.add(obj_1, shape_info, 16, 16, 1);
+
+	obj_mana.enable_bound({0, 1});
+
+	obj_mana.set_xaxis_bound({0, 1}, 1, XLEN);
+	obj_mana.set_yaxis_bound({0, 1}, 1, YLEN);
+
+	obj_mana.enable_gravity({0, 1});
+
+	obj_mana.yaxis_direction(0) = FFLY_DIR_PUSH;
+	obj_mana.add_yaxis_velos(0, 160);
+	obj_mana.mass(1) = 856;
+
+	obj_mana.add_to_gravy_pool(0, 1);
+	obj_mana.add_to_gravy_pool(1, 0);
+
+	client-> init(init_options);
+	client-> begin("Stranded Alpha", game_loop);
+	delete client;
+
+	return 0;
+}
