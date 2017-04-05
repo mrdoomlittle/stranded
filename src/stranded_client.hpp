@@ -7,17 +7,23 @@
 # include <firefly/types/colour_t.hpp>
 # include <firefly/graphics/fill_pixmap.hpp>
 # include <firefly/types/coords_t.hpp>
+# ifdef UNI_MANAGER
+#	include <firefly/types/uni_prop_t.hpp>
+# endif
+# include <firefly/gui/btn.hpp>
+# include <firefly/types/id_t.hpp>
+# include <firefly/room_manager.hpp>
+# include <firefly/types/btn_event_t.hpp>
 namespace mdl { class stranded_client
 {
 	public:
-	stranded_client(uint_t __wd_xaxis_len, uint_t __wd_yaxis_len)
+	stranded_client(boost::uint16_t __wd_xaxis_len, boost::uint16_t __wd_yaxis_len)
 	: wd_xaxis_len(__wd_xaxis_len), wd_yaxis_len(__wd_yaxis_len), _ffly_client(__wd_xaxis_len, __wd_yaxis_len) {}
 
 	boost::int8_t init();
 	boost::int8_t begin();
 	boost::int8_t de_init();
-
-	static void engine_loop(boost::int8_t __info, mdl::ffly_client::portal_t *__portal, void *__this);
+	void static engine_loop(boost::int8_t __info, mdl::ffly_client::portal_t *__portal, void *__this);
 
 	ffly_client _ffly_client;
 
@@ -28,7 +34,20 @@ namespace mdl { class stranded_client
 		.a = 255
 	};
 
-	uint_t const wd_xaxis_len, wd_yaxis_len;
+
+	struct _bse_room {
+		/*
+			0-> singleplayer
+			1-> multiplayer
+			2-> options
+			3-> uni editor
+			4-> edit
+		*/
+		uint_t btn_indx[5];
+	} bse_room;
+
+	private:
+	boost::uint16_t const wd_xaxis_len, wd_yaxis_len;
 } ;
 }
 
