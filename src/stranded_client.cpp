@@ -1,109 +1,113 @@
 # include "stranded_client.hpp"
-# include <errno.h>
-boost::int8_t mdl::stranded_client::init() {
-	mdl::firefly::types::init_opt_t init_options = {
-		.cam_xlen = 256,
-		.cam_ylen = 256
-	};
-
-	init_options.add_bse_room = true;
-	init_options.change_room = true;
-	init_options.add_bse_layer = false;
-
-	this-> _ffly_client.layer.add_layer(640, 480, 0, 0);
-
-	this-> _ffly_client.init(init_options);
-
-	firefly::gui::btn btn;
-
-	firefly::types::id_t bse_room_id = this-> _ffly_client.bse_room_id;
-	firefly::room_manager& room_manager = this-> _ffly_client.room_manager;
-	firefly::asset_manager& asset_manager = this-> _ffly_client.asset_manager;
-
-
-	uint_t btn_count = sizeof(_bse_room::btn_indx)/sizeof(this-> bse_room.btn_indx[0]);
-	char const *text[btn_count] = {
-		"Singleplayer",
-		"Multiplayer",
-		"Options",
-		"Uni Editor",
-		"Exit"
-	};
-	firefly::gui::btn_manager& btn_manager = firefly::room_manager::get_btn_manager(bse_room_id, &room_manager);
-
-	for (std::size_t o = 0; o != btn_count; o ++) {
-		btn.load_btn_ast(asset_manager.load_asset("../assets/template", firefly::asset_manager::AST_PNG_FILE), &asset_manager);
-		btn.create_btn(bse_room.btn_indx[o], &btn_manager, firefly::types::__coords__<uint_t>(0, (btn.get_pm_size().yaxis_len * o)  + (8 * o) + 24));
-
-		if (btn_manager.set_text(bse_room.btn_indx[o], text[o], "../assets/TECHNOLIN.ttf", 0, 0, 2, true) == FFLY_FAILURE) return FFLY_FAILURE;
-
-		btn.center_btn(room_manager.get_btn(bse_room_id, bse_room.btn_indx[o]), this-> wd_xaxis_len, 0);
-
-		btn_manager.enable_btn(bse_room.btn_indx[o]);
-		btn_manager.event_bind(bse_room.btn_indx[o]);
-		btn_manager.enable_hover(bse_room.btn_indx[o]);
-		btn_manager.enable_press(bse_room.btn_indx[o]);
+# include <firefly/types/err_t.h>
+# include <firefly/system/errno.h>
+# include <firefly/system/io.h>
+# include <firefly/keycodes.h>
+# include <firefly/types/wd_ed_t.h>
+# include <firefly/system/event_field.h>
+# include <firefly/graphics/colour.hpp>
+# include <firefly/data/mem_set.h>
+# include <firefly/graphics/fill.h>
+# include <firefly/graphics/colour.hpp>
+# include <firefly/system/err.h>
+# include <firefly/graphics/png_loader.h>
+# include <firefly/graphics/image.h>
+# include <firefly/graphics/copy.h>
+# include <firefly/types/id_t.h>
+# include <firefly/data/mem_cpy.h>
+# include <firefly/memory/mem_free.h>
+mdl::firefly::types::err_t mdl::stranded_client::init(u16_t __wd_width, u16_t __wd_height) {
+	firefly::types::err_t err;
+	if (_err(err = this->ffc.init(__wd_width, __wd_height, TITLE))) {
+		firefly::system::io::fprintf(ffly_err, "failed to init firefly.\n");
+		return err;
 	}
 
-//	firefly::types::btn_t *my_btn = room_manager.get_btn(bse_room_id, btn_id);
+	uint_t no = this->ffc.layer_m.add_layer(__wd_width, __wd_height, 0, 0, nullptr, err);
+	if (_err(err)) {
+		firefly::system::io::fprintf(ffly_err, "failed to add layer.\n");
+		return err;
+	}
+
+	firefly::types::id_t id = this->ffc.asset_m.load_asset("assets", "test", _ffly_ak_png_file, 0, err);
+	if (_err(err)) {
+		firefly::system::io::fprintf(ffly_err, "failed to load asset.\n");
+		return err;
+	}
+
+	this->bg = (firefly::graphics::imagep)this->ffc.asset_m.get_asset_data(id);
+	if (_err(err = firefly::graphics::pixelcopy(this->ffc.layer_m.get_layer_pixelmap(no), this->bg->pixels, this->bg->width*this->bg->height))) {
+		firefly::system::io::fprintf(ffly_err, "failed to copy pixels.\n");
+		return err;
+	}
+
+/*
+	if (_err(err = firefly::graphics::pixelfill(this->ffc.layer_m.get_layer_pixelmap(no), __wd_width*__wd_height, firefly::graphics::mk_colour(0xFF, 0xFF, 0x0, 0xFF)))) {
+		firefly::system::io::fprintf(ffly_err, "failed to fill base layer.\n");
+		return err;
+	}
+*/
+	return FFLY_SUCCESS;
 }
 
-boost::int8_t mdl::stranded_client::begin() {
-	this-> _ffly_client.begin("Stranded Alpha", &stranded_client::engine_loop, this);
+mdl::firefly::types::err_t mdl::stranded_client::begin() {
+	firefly::types::err_t err;
+	if (_err(err = this->ffc.begin(&stranded_client::engine_loop, (void*)this))) {
+		firefly::system::io::fprintf(ffly_out, "failed to ignite engine.\n");
+		return err;
+	}
+	return FFLY_SUCCESS;
 }
 
-void mdl::stranded_client::engine_loop(boost::int8_t __info, mdl::ffly_client::portal_t *__portal, void *__this) {
-	stranded_client *_this = (stranded_client *)__this;
+# include <firefly/system/event_kind.h>
+# include <firefly/types/event_t.h>
+# include <firefly/system/event.h>
+# include <firefly/firefly.hpp>
+mdl::firefly::types::err_t mdl::stranded_client::engine_loop(i8_t __report, ffly_client::portal_t *__portal, void *__arg_p) {
+	mdl::firefly::system::io::printf("fps: %u\n", __portal->get_fps());
+	mdl::stranded_client *_this = reinterpret_cast<mdl::stranded_client*>(__arg_p);
 
-	static firefly::system::event event;
+	mdl::firefly::types::event_t *event;
+	while(mdl::firefly::poll_event(event)) {
+		switch(event->kind) {
+			case _ffly_wd_ek_key_press:
 
-	while(__portal-> poll_event(event)) {
-		switch(event.event_type) {
-			case mdl::firefly::system::event::KEY_PRESSED:
-				if (event.key_code == mdl::firefly::system::event::WD_KEY_D) {
-					printf("key 'WD_KEY_D' was pressed.\n");
-
-				} else if (event.key_code == mdl::firefly::system::event::WD_KEY_A) {
-					printf("key 'WD_KEY_A' was pressed.\n");
-
-				} else if (event.key_code == mdl::firefly::system::event::WD_KEY_W) {
-					printf("key 'WD_KEY_W' was pressed.\n");
-
-				} else if (event.key_code == mdl::firefly::system::event::WD_KEY_S) {
-					printf("key 'WD_KEY_S' was pressed.\n");
-
-				}
 			break;
-			case mdl::firefly::system::event::BTN_PRESS: {
-				mdl::firefly::types::btn_event_t *btn_event = (mdl::firefly::types::btn_event_t *)event.data;
-				if (btn_event-> btn_id == 4) __portal-> _this-> shutdown();
-				printf("button with the id of %d has been pressed.\n", btn_event-> btn_id);
-				break;
-			}
-	//		default:
-	//			printf("event that was captured was not recognized.\n");
-	//		break;
+			case _ffly_wd_ek_closed:
+				mdl::firefly::system::io::printf("shuting down.\n", __portal->get_fps());
+				__portal->shutdown();
+			break;
 		}
+		mdl::firefly::free_event(__portal->get_ffc_p(), event);
 	}
 
-	printf("%d FPS\n", __portal-> fps_count());
-	usleep(1000);
+	return FFLY_SUCCESS;
+}
 
-	firefly::graphics::fill_pixmap(__portal-> _this-> layer.get_layer_pixmap(0), _this-> wd_xaxis_len, _this-> wd_yaxis_len, _this-> bg_colour);
+mdl::firefly::types::err_t mdl::stranded_client::de_init() {
+	firefly::types::err_t err;
+	if (_err(err = this->ffc.de_init())) {
+		firefly::system::io::fprintf(ffly_err, "failed to de-init firefly.\n");
+		return err;
+	}
+	return FFLY_SUCCESS;
 }
 
 int main() {
-	try {
-	mdl::stranded_client stranded_client(640, 480);
-	if (stranded_client.init() == FFLY_FAILURE) return 1;
-	stranded_client.begin();
-
-	printf("%d\n", errno);
-	printf("back to main function\n");
-	exit(1);
-	} catch(...) {
-		printf("failed to close app.\n");
+	mdl::stranded_client stranded;
+	if (_err(stranded.init(WIDTH, HEIGHT))) {
+		mdl::firefly::system::io::fprintf(ffly_err, "stranded: failed to init.\n");
+		return FFLY_FAILURE;
 	}
 
-	return 0;
+	if (_err(stranded.begin())) {
+		mdl::firefly::system::io::fprintf(ffly_err, "stranded: failed to begin.\n");
+		return FFLY_FAILURE;
+	}
+
+	if (_err(stranded.de_init())) {
+		mdl::firefly::system::io::fprintf(ffly_err, "stranded: failed to de-init.\n");
+		return FFLY_FAILURE;
+	}
+	return FFLY_SUCCESS;
 }

@@ -5,17 +5,9 @@ FFLY_LIB=-L$(FFLY_DIR)/lib
 CURR_DIR=${CURDIR}
 
 ARC=-DARC64
-
-server:
-	cd $(FFLY_DIR); make ffly_server; cd $(CURR_DIR);
-#	g++ -std=c++11 $(SE_CXXFLAGS) -o bin/stranded_server.exec src/stranded_server.cpp $(SE_LDFLAGS)
-
+FFLY_ARGS=--force-cuda --use-x11
 client:
-	cd $(FFLY_DIR); . ./compile.sh $(CURR_DIR)/bin/stranded_client.exec $(CURR_DIR)/src/stranded_client.cpp FFLY_CLIENT ffly_client "-DROOM_MANAGER" cd ../;
-	echo "$(CXXFLAGS)"
-#	cd $(FFLY_DIR); make ffly_client; cd $(CURR_DIR);
-#	g++ -std=c++11 $(CL_CXXFLAGS) -o bin/stranded_client.exec src/stranded_client.cpp $(CL_LDFLAGS)
-
+	cd $(FFLY_DIR); . ./compile.sh $(CURR_DIR)/bin/stranded_client.exec $(CURR_DIR)/src/stranded_client.cpp "--ffly-client $(FFLY_ARGS)" cd ../;
 iclean:
 	rm -f bin/*.exec src/*.o
 
