@@ -5,7 +5,7 @@ FFLY_LIB=-L$(FFLY_DIR)/lib
 CURR_DIR=${CURDIR}
 
 ARC=-DARC64
-FFLY_ARGS=--force-cuda --use-x11
+FFLY_ARGS=--force-cuda --use-xcb
 client:
 	cd $(FFLY_DIR); . ./compile.sh $(CURR_DIR)/bin/stranded_client.exec $(CURR_DIR)/src/stranded_client.cpp "--ffly-client $(FFLY_ARGS)" cd ../;
 iclean:

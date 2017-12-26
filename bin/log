@@ -4,772 +4,210 @@ firefly; successfully inited engine.
 firefly; initing window.
 firefly; window, width: 400, height: 400, title: Stranded - r0.001
 firefly; successfully inited window.
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
 firefly; going to load png file assets/test.png
-firefly; loading png file, width: 400, height: 400, chn_c: 4
+firefly; loaded png image, width: 400, height: 400, chn_c: 4
 firefly; fps: 0
 firefly; alloced event.
 firefly; unknown window event was caught.
 firefly; freed event.
-firefly; alloced event.
-firefly; unknown window event was caught.
-firefly; freed event.
-firefly; alloced event.
-firefly; unknown window event was caught.
-firefly; freed event.
-firefly; alloced event.
-firefly; unknown window event was caught.
-firefly; freed event.
-firefly; alloced event.
-firefly; unknown window event was caught.
-firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
 firefly; about to prosess graphics job.
-firefly; graphics job-pixcopy, 0x7f3a70c51010, 0x7f3a70bb4010, 160000
+firefly; graphics job-pixcopy, 0x7fb30f79e010, 0x7fb30f701010, 160000
 firefly; about to prosess graphics job.
 firefly; act added.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
 firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
 firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
 firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
 firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
 firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
 firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
 firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
 firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
 firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
 firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
 firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
 firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
 firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
 firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
 firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
 firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
 firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 0
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 39
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; alloced event.
-firefly; window event hasent been implemented.
-firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; alloced event.
-firefly; window event hasent been implemented.
-firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; alloced event.
-firefly; window event hasent been implemented.
-firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; alloced event.
-firefly; window event hasent been implemented.
-firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; alloced event.
-firefly; window event hasent been implemented.
-firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; alloced event.
-firefly; window event hasent been implemented.
-firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; alloced event.
-firefly; window event hasent been implemented.
-firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; alloced event.
-firefly; window event hasent been implemented.
-firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; alloced event.
-firefly; window event hasent been implemented.
-firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; alloced event.
-firefly; window event hasent been implemented.
-firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
-firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
-firefly; fps: 43
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 10
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
+firefly; about to prosess graphics job.
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
+firefly; fps: 12
 firefly; alloced event.
 firefly; got event to close window.
 firefly; pushed event to queue.
 firefly; poped event from queue.
 firefly; freed event.
-firefly; frame buff: 0x7f3a79642010
-firefly; layer, width: 400, height: 400, 0x7f3a70c51010
+firefly; frame buff: 0x7fb30f83b010
+firefly; layer, width: 400, height: 400, 0x7fb30f79e010
 firefly; about to prosess graphics job.
-firefly; graphics job-pixdraw, 0, 0, 0x7f3a79642010, 400, 0x7f3a70c51010, 400, 400
+firefly; graphics job-pixdraw, 0, 0, 0x7fb30f83b010, 400, 0x7fb30f79e010, 400, 400
 firefly; de-initing window.
 firefly; no problem occurred while de-inited window.
 firefly; asset_manager: freed memory for asset{id: 0}, size: 0 bytes.
